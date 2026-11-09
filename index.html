@@ -2,29 +2,30 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#101515"><title>Для Богдана ♡</title>
+<meta name="theme-color" content="#101515"><title>От нейрона: с днюхой братан</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="paper-texture"></div><div class="ribbons" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<div class="corner-ribbons" aria-hidden="true"><span><i></i><b></b></span><span><i></i><b></b></span><span><i></i><b></b></span><span><i></i><b></b></span></div>
 <div class="garland" aria-hidden="true"><span>♡</span><span>✦</span><span>♡</span><span>✧</span><span>♡</span><span>✦</span><span>♡</span></div>
 <canvas id="confetti"></canvas>
 <main class="app">
-  <header class="mini-header"><span class="tiny-heart">♡</span><span>маленький сюрприз для Богдана</span><span class="tiny-heart">♡</span></header>
+  <header class="mini-header"><span class="tiny-heart">♡</span><span>маленький сюрприз для Нипля</span><span class="tiny-heart">♡</span></header>
 
   <section class="page active" id="p-envelope">
     <div class="envelope-stage">
       <div class="eyebrow">ОТКРОЙ, КОГДА БУДЕШЬ ГОТОВ</div>
       <button class="envelope-hit" id="envelope-hit" aria-label="Открыть конверт">
         <div class="envelope">
-          <div class="env-back"></div><div class="env-letter"><span>для самого</span><b>Богдана</b><small>с теплом ♡</small></div>
-          <div class="env-flap"></div><div class="env-front"></div><div class="seal">B</div>
+          <div class="env-back"></div><div class="env-letter"><span>для моего</span><b>нипля</b><small>♡</small></div>
+          <div class="env-flap"></div><div class="env-front"></div><div class="seal">♡</div>
         </div>
       </button>
-      <h1 class="serif">Для Богдана <span>♡</span></h1>
-      <p class="sub">У тебя одно маленькое важное дело — нажать на конверт.</p>
+      <h1 class="serif">Для Нипля <span>♡</span></h1>
+      <p class="sub">У тебя одно маленькое важное дело нажми на конверт.</p>
       <div class="from">от Полины, с любовью</div>
     </div>
   </section>
@@ -33,18 +34,18 @@
     <div class="decor-heart left">♡</div><div class="decor-heart right">✧</div>
     <div class="illustration bear">૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</div>
     <div class="eyebrow">СЕГОДНЯ ОСОБЕННЫЙ ДЕНЬ</div>
-    <h1 class="serif big">С днём рождения,<br><em>Богдан!</em></h1>
+    <h1 class="serif big">С днём рождения,<br><em>тучка!</em></h1>
     <p class="question">Ну что, готов к своему маленькому сюрпризу?</p>
     <div class="choice-row"><button class="btn yes" data-next="p-yes">Да, конечно!</button><button class="btn no" id="no-btn">Нет</button></div>
-    <div class="tiny-note" id="no-note">Кажется, кнопка «нет» сегодня не работает 🙈</div>
+    <div class="tiny-note" id="no-note">Кажется, сегодня нет не принимается</div>
   </section>
 
   <section class="page" id="p-yes">
     <div class="eyebrow">Я ТАК И ЗНАЛА</div>
     <div class="big-yes">ДААА!</div>
     <div class="illustration happy">૮₍ ˃ ⤙ ˂ ₎ა</div>
-    <h2 class="serif">Вот и отлично!</h2>
-    <p class="sub">Тогда устраивайся поудобнее.<br>Для тебя здесь кое-что приготовлено.</p>
+    <h2 class="serif">Вот и отлична</h2>
+    <p class="sub">Тогда устраивайся поудобнее.<br>Для тебя здесь кое-что приготовлено</p>
     <button class="btn yes" data-next="p-photos">Продолжить ♡</button>
   </section>
 
@@ -58,7 +59,7 @@
       <button class="photo-card tilt-c" data-photo="2"><img src="assets/photo-3.svg" alt="Фото 3"><span>и ещё одно ♡</span></button>
     </div>
     <p class="hint">Нажми на фотографию, чтобы открыть её поближе</p>
-    <button class="btn yes" data-next="p-gifts">Дальше — больше сюрпризов</button>
+    <button class="btn yes" data-next="p-gifts">Давай дальше</button>
   </section>
 
   <section class="page" id="p-gifts">
@@ -66,9 +67,9 @@
     <h2 class="serif">Выбирай любой <em>♡</em></h2>
     <p class="sub">Интересно, что же спрятано внутри?</p>
     <div class="boxes">
-      <button class="present" data-gift="0"><img src="assets/gift-scene-1.svg" alt="Чёрно-белый рисунок праздничного торта со свечами и надписью Ого какой торт"><span>подарок №1</span></button>
-      <button class="present" data-gift="1"><img src="assets/gift-scene-2.svg" alt="Чёрно-белая манга: девушка весело бросает торт парню в лицо"><span>подарок №2</span></button>
-      <button class="present" data-gift="2"><img src="assets/gift-scene-3.svg" alt="Чёрно-белый рисунок пары за праздничным тортом"><span>подарок №3</span></button>
+      <button class="present" data-gift="0"><img src="assets/gift-blue.svg" alt="Голубая подарочная коробка"><span>открыть подарок №1</span></button>
+      <button class="present" data-gift="1"><img src="assets/gift-mint.svg" alt="Мятная подарочная коробка"><span>открыть подарок №2</span></button>
+      <button class="present" data-gift="2"><img src="assets/gift-pearl.svg" alt="Жемчужная подарочная коробка"><span>открыть подарок №3</span></button>
     </div>
     <div class="opened-count" id="opened-count">Открыто подарков: 0 из 3</div>
     <button class="btn yes" data-next="p-letter">К письму ♡</button>
@@ -89,9 +90,9 @@
   <section class="page" id="p-music">
     <div class="music-note">♫</div><div class="eyebrow">МУЗЫКА ЭТОГО ДНЯ</div>
     <h2 class="serif">Пусть играет <em>настроение</em></h2>
-    <p class="sub">Один любимый трек — чтобы этот день звучал особенно.</p>
+    <p class="sub">Крутой трек как и ты</p>
     <div class="music-player" id="music-player">
-      <div class="music-player-top"><div class="music-disc" aria-hidden="true">♫</div><div class="music-track-info"><b>Твоя праздничная песня</b><small>для Богдана · Red Hot Chili Peppers - Under the Bridge</small></div><span class="playing-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
+      <div class="music-player-top"><div class="music-disc" aria-hidden="true">♫</div><div class="music-track-info"><b>Твоя праздничная песня</b><small>для грелки · Red Hot Chili Peppers - Under the Bridge</small></div><span class="playing-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div>
       <div class="music-controls"><button class="music-toggle" id="music-toggle" type="button" aria-label="Воспроизвести">▶</button><div class="music-timeline"><input id="music-progress" type="range" min="0" max="100" value="0" step="0.1" aria-label="Позиция воспроизведения"><div class="music-times"><span id="music-current">0:00</span><span id="music-duration">0:00</span></div></div></div>
       <label class="volume-row" for="music-volume"><span>ГРОМКОСТЬ</span><input id="music-volume" type="range" min="0" max="1" value="0.35" step="0.01"><span id="volume-value">35%</span></label>
     </div>
@@ -109,12 +110,20 @@
     <button class="restart" id="restart">Посмотреть ещё раз</button>
   </section>
 
-  <audio id="birthday-audio" src="song/Red Hot Chili Peppers - Under the Bridge.m4a" loop preload="metadata"></audio>
-  <footer class="footer"><span>сделано с любовью</span><b>♡</b><span>для Богдана</span></footer>
+  <audio id="background-audio" src="song/тмный принц - цветы.m4a" loop preload="auto"></audio>
+  <audio id="player-audio" src="song/Red Hot Chili Peppers - Under the Bridge.m4a" preload="metadata"></audio>
+  <footer class="footer"><span>сделано с любовью</span><b>♡</b><span>для Боди</span></footer>
 
 </main>
 
-<div class="modal" id="gift-modal"><div class="modal-card"><button class="close" data-close>×</button><div class="modal-spark">✧</div><div class="eyebrow">ТВОЙ СЮРПРИЗ</div><h3 id="gift-title" class="serif"></h3><p id="gift-text"></p><button class="btn yes" data-close>Как мило ♡</button></div></div>
+<aside class="background-control" aria-label="Управление фоновой музыкой">
+  <span class="bg-note" aria-hidden="true">♫</span>
+  <div class="bg-meta"><b>Фоновая музыка</b><small>тёмный принц — цветы</small></div>
+  <button id="bg-mute" type="button" aria-label="Выключить фоновую музыку">♫</button>
+  <input id="bg-volume" type="range" min="0" max="1" value="0.24" step="0.01" aria-label="Громкость фоновой музыки">
+  <span id="bg-volume-value">24%</span>
+</aside>
+<div class="modal" id="gift-modal"><div class="modal-card"><button class="close" data-close>×</button><div class="modal-spark">✧</div><div class="eyebrow">ТВОЙ СЮРПРИЗ</div><img id="gift-reveal" class="gift-reveal" src="assets/gift-scene-1.svg" alt="Иллюстрация подарка"><h3 id="gift-title" class="serif"></h3><p id="gift-text"></p><button class="btn yes" data-close>Как мило ♡</button></div></div>
 <div class="lightbox" id="lightbox"><button class="lb-close">×</button><button class="lb-prev">‹</button><figure><img id="lb-img" src="" alt=""><figcaption id="lb-cap"></figcaption></figure><button class="lb-next">›</button></div>
 <script src="script.js"></script>
 </body></html>
